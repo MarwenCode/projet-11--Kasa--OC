@@ -1,0 +1,142 @@
+.announcement-details {
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+
+    .image-container {
+        width: 50%;
+    }
+
+    .content {
+        width: 100%;
+        //   background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+
+        .top {
+            margin-left: -230px;
+
+            h2 {
+                font-size: 24px;
+                font-weight: bold;
+                color: #ff6060;
+                font-family: font-400, sans-serif;
+            }
+
+            p {
+                margin-bottom: 10px;
+                font-size: 16px;
+                color: #ff6060;
+                margin-left: -230px;
+            }
+        }
+
+        .tags {
+            display: flex;
+            gap: 10px;
+
+            span {
+                background-color: #ff6060;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+        }
+
+        .down {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+          
+            .description-dropdown,
+            .equipment-dropdown {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              align-items: flex-start;
+              width: 50%;
+          
+              .content {
+                background-color: #ff6060;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+
+                p {
+
+
+                }
+
+                span {
+                    margin-left: 80%;
+                    font-size: 20px;
+                    color: #ffffff;
+
+                    
+                .dropdown-icon {
+                
+                     cursor: pointer;
+                     margin-right: -100%;
+                   }
+
+                }
+          
+              }
+          
+              span {
+                margin-top: 10px; // Espacement entre le contenu et le texte
+              }
+          
+              ul {
+                margin-top: 10px; // Espacement entre le contenu et la liste d'équipement
+              }
+            }
+          }
+          
+          
+
+        // .down {
+        //     display: flex;
+        //     gap: 50px;
+
+        //     .description-dropdown,
+        //     .equipment-dropdown {
+        //         width: 50%;
+        //     }
+
+        //     .description-dropdown {
+        //         display:flex;
+
+
+        //         color: #ffffff;
+        //         font-size: 18px;
+
+        //         p {
+        //             background-color: #ff6060;
+        //             height: 52px;
+        //         }
+
+        //         .dropdown-icon {}
+
+        //         span {
+        //             color: #ff6060;
+        //         }
+        //     }
+
+        //     .equipment-dropdown {
+        //         display: felx;
+        //         p {
+        //             background-color: #ff6060;
+        //             height: 52px;
+        //             color: #ffffff;
+        //             font-size: 18px;
+        //         }
+
+        //         ul {
+        //             color: #ff6060;
+        //         }
+        //     }
+        // }
+    }
+}

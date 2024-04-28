@@ -4,7 +4,6 @@
     align-items: center;
     padding: 1rem;
 
-
     .logo {
         margin-right: auto;
     }
@@ -19,7 +18,11 @@
             color: #333;
 
             &:hover {
-                color: #007bff; /* Change color on hover */
+                color: #FF6060;
+            }
+
+            &.activeLink {
+                border-bottom: 2px solid #0d0d0e;
             }
         }
     }
