@@ -46,39 +46,42 @@ const AppartDetails = () => {
           </div>
 
           <div className="down">
-  <div className="description-dropdown">
-    <div className="content">
-      <p>Description</p>
-      <span>
-        <FaChevronDown
-          onClick={toggleDescription}
-          className={`dropdown-icon ${isDescriptionOpen ? 'open' : 'closed'}`}
-        />
-      </span>
-    </div>
-    {isDescriptionOpen && <span>{announcement.description}</span>}
-  </div>
+            <div className="description-dropdown">
+              <div className="content">
+                <p>Description</p>
+                <span>
+                  <FaChevronDown
+                    onClick={toggleDescription}
+                    className={`dropdown-icon ${
+                      isDescriptionOpen ? "open" : "closed"
+                    }`}
+                  />
+                </span>
+              </div>
+              {isDescriptionOpen && <span>{announcement.description}</span>}
+            </div>
 
-  <div className="equipment-dropdown">
-    <div className="content">
-      <p>Equipement</p>
-      <span>
-        <FaChevronDown
-          onClick={toggleEquipment}
-          className={`dropdown-icon ${isEquipmentOpen ? 'open' : 'closed'}`}
-        />
-      </span>
-    </div>
-    {isEquipmentOpen && (
-      <ul>
-        {announcement.equipments.map((equipment, index) => (
-          <li key={index}>{equipment}</li>
-        ))}
-      </ul>
-    )}
-  </div>
-</div>
-
+            <div className="equipment-dropdown">
+              <div className="content">
+                <p>Equipement</p>
+                <span>
+                  <FaChevronDown
+                    onClick={toggleEquipment}
+                    className={`dropdown-icon ${
+                      isEquipmentOpen ? "open" : "closed"
+                    }`}
+                  />
+                </span>
+              </div>
+              {isEquipmentOpen && (
+                <ul>
+                  {announcement.equipments.map((equipment, index) => (
+                    <li key={index}>{equipment}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../components/navbar/Navbar';
 import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
 import data from "../../data/data.json";
 import { Link } from 'react-router-dom';
 import './home.scss';

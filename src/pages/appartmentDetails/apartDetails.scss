@@ -4,17 +4,29 @@
     margin: 20px;
 
     .image-container {
-        width: 50%;
+
+       
+    
+
+            img {
+                border-radius: 25px;
+                height: 415px;
+                object-fit: cover;
+                width: 100%;
+            }
     }
 
     .content {
         width: 100%;
-        //   background-color: white;
         padding: 20px;
         border-radius: 5px;
 
+
         .top {
-            margin-left: -230px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
 
             h2 {
                 font-size: 24px;
@@ -24,10 +36,10 @@
             }
 
             p {
-                margin-bottom: 10px;
+                margin-top: -20px;
                 font-size: 16px;
                 color: #ff6060;
-                margin-left: -230px;
+
             }
         }
 
@@ -44,99 +56,56 @@
             }
         }
 
+      
         .down {
+          display: flex;
+          justify-content: space-between;
+          gap: 50px;
+          margin-top: 20px;
+      
+          .description-dropdown,
+          .equipment-dropdown {
             display: flex;
-            justify-content: space-between;
-            gap: 50px;
-          
-            .description-dropdown,
-            .equipment-dropdown {
+            flex-direction: column;
+            align-items: flex-start;
+            width: 50%;
+      
+            .content {
+              background-color: #ff6060;
+              padding: 10px;
               display: flex;
               flex-direction: column;
-              justify-content: flex-end;
               align-items: flex-start;
-              width: 50%;
-          
-              .content {
-                background-color: #ff6060;
-                padding: 10px;
-                display: flex;
-                align-items: center;
-
-                p {
-
-
-                }
-
-                span {
-                    margin-left: 80%;
-                    font-size: 20px;
-                    color: #ffffff;
-
-                    
-                .dropdown-icon {
-                
-                     cursor: pointer;
-                     margin-right: -100%;
-                   }
-
-                }
-          
+              transition: height 0.3s ease; 
+      
+              p {
+                margin-right: auto; 
               }
-          
+      
               span {
-                margin-top: 10px; // Espacement entre le contenu et le texte
-              }
-          
-              ul {
-                margin-top: 10px; // Espacement entre le contenu et la liste d'équipement
+                font-size: 20px;
+                color: #ffffff;
+                cursor: pointer;
+                margin-left: 95%;
+                margin-top: -30px;
               }
             }
+      
+            span {
+              margin-top: 10px;
+            }
+      
+            ul {
+              margin-top: 10px;
+            }
+      
+         
+            &.open .content {
+              height: 50%; 
+            }
           }
-          
-          
-
-        // .down {
-        //     display: flex;
-        //     gap: 50px;
-
-        //     .description-dropdown,
-        //     .equipment-dropdown {
-        //         width: 50%;
-        //     }
-
-        //     .description-dropdown {
-        //         display:flex;
-
-
-        //         color: #ffffff;
-        //         font-size: 18px;
-
-        //         p {
-        //             background-color: #ff6060;
-        //             height: 52px;
-        //         }
-
-        //         .dropdown-icon {}
-
-        //         span {
-        //             color: #ff6060;
-        //         }
-        //     }
-
-        //     .equipment-dropdown {
-        //         display: felx;
-        //         p {
-        //             background-color: #ff6060;
-        //             height: 52px;
-        //             color: #ffffff;
-        //             font-size: 18px;
-        //         }
-
-        //         ul {
-        //             color: #ff6060;
-        //         }
-        //     }
-        // }
-    }
+        }
+      }
+      
+      
 }
