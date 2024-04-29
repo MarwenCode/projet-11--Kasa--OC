@@ -27,6 +27,7 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 10px;
+            margin-top: 20px;
 
             h2 {
                 font-size: 24px;
@@ -36,7 +37,7 @@
             }
 
             p {
-                margin-top: -20px;
+                margin-top: 10px;
                 font-size: 16px;
                 color: #ff6060;
 
@@ -46,6 +47,7 @@
         .tags {
             display: flex;
             gap: 10px;
+            margin-top: 30px;
 
             span {
                 background-color: #ff6060;
@@ -69,6 +71,8 @@
             flex-direction: column;
             align-items: flex-start;
             width: 50%;
+            margin-top: 40px;
+        
       
             .content {
               background-color: #ff6060;
@@ -87,7 +91,7 @@
                 color: #ffffff;
                 cursor: pointer;
                 margin-left: 95%;
-                margin-top: -30px;
+                margin-top: -20px;
               }
             }
       
