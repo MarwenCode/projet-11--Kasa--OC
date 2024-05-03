@@ -5,7 +5,7 @@ import './navbar.scss';
 
 const Navbar = () => {
     const location = useLocation(); 
-    console.log(location);
+    // console.log(location);
     return (
         <nav className="navbar"> 
             <div className="logo"> 

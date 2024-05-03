@@ -3,33 +3,19 @@ import Navbar from '../../components/navbar/Navbar';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import data from "../../data/data.json";
-import { Link } from 'react-router-dom';
+
+
 import './home.scss';
+import { Card } from '../../components/card/Card';
 
 const Home = () => {
   return (
     <div className='home'>
       <Navbar />
       <Header />
-
-      <div className="announcements">
-        {data.map((announcement, index) => (
-          <div key={announcement.id} className="card">
-              <Link to={`/apartment/${announcement.id}`}>
-            <div className="image-container">
-              <img src={announcement.cover} alt={announcement.title} />
-         
-            <div className="content">
-              <h2>{announcement.title}</h2>
-              <p>{announcement.location}</p>
-              </div>
-
-              </div>
-              </Link>
-
-          </div>
-        ))}
-      </div>
+     <Card data={data} />
+ 
+   
     </div>
   );
 };
