@@ -1,23 +1,26 @@
 .footer {
-    background: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    height: 209px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    span {
-      font-size: 24px;
-    }
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 209px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  span {
+    font-size: 24px;
   }
-  @media screen and (max-width: 550px) {
-    footer{
-        span {
-      font-size: 12px;
-    }
-    }
+}
+
+@media screen and (max-width: 425px) {
+  .footer {
+    width: 425px;
   }
+}
+
+
+

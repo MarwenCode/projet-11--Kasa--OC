@@ -1,20 +1,72 @@
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../header/bg-sea-min.png) center / cover;
-    border-radius: 20px;
-    height: 223px;
-    width: 89%;
-    margin-left:80px;
-   
+  display: flex;
+  flex: 30% 1 1;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../header/bg-sea-min.png) center / cover;
+  border-radius: 20px;
+  height: 223px;
+  // width: 100%;
+  max-width: 1350px; 
+  margin: 30px auto; 
+
+  h1 {
+    color: white;
+    font-family: font-400;
+    font-weight: 500;
+    font-size: 48px;
+  }
+
   
-  
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 95%;
+    height: 180px;
     h1 {
-      color: white;
-      font-family: font-400;
-      font-weight: 500;
-      font-size: 48px;
+      font-size: 26px;
     }
   }
-  
+}
+
+@media screen and (max-width: 420px) {
+  .header {
+    margin: auto 45px;
+    height: 120px;
+    width: calc(100% - 90px); 
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    margin: auto 30px;
+    height: 120px;
+    width: 100%;
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    margin: auto 35px;
+    height: 120px;
+    width: 110%;
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
+
+
+
+
+
+
