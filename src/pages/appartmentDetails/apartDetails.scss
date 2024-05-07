@@ -164,3 +164,27 @@
     }
   }
 }
+
+
+
+
+@media screen and (max-width: 375px) {
+
+  .image-container {
+  
+    // background-color: red;
+    width: 140%;
+
+    img {
+      border-radius: 25px;
+      height: 415px;
+      object-fit: cover;
+  
+    }
+  }
+
+ 
+
+
+  
+}

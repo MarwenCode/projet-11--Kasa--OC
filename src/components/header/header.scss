@@ -10,6 +10,7 @@
   max-width: 1350px; 
   margin: 30px auto; 
 
+
   h1 {
     color: white;
     font-family: font-400;
@@ -22,7 +23,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .header {
     width: 95%;
     height: 180px;
@@ -32,22 +33,28 @@
   }
 }
 
+
+
+
 @media screen and (max-width: 420px) {
   .header {
-    margin: auto 45px;
+    margin: auto 35px;
     height: 120px;
-    width: calc(100% - 90px); 
+    width: 100%;
+    margin: auto 5px;
     h1 {
       font-size: 24px;
+      color:red;
     }
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .header {
     margin: auto 30px;
     height: 120px;
     width: 100%;
+    margin: auto 35px;
     h1 {
       font-size: 24px;
     }
@@ -58,9 +65,11 @@
   .header {
     margin: auto 35px;
     height: 120px;
-    width: 110%;
+    width: 120%;
+    margin: auto 15px;
     h1 {
       font-size: 24px;
+      color:red;
     }
   }
 }
