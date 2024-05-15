@@ -81,13 +81,12 @@
   @media screen and (max-width: 320px) {
     .navbar {
    
-      margin-left: 10px;
-      width: 120%;
+      width: 100%;
    
   
       .logo {
-        width: 170px;
-        margin-left: 25px;
+        width: 120px;
+     
   
         img {
           width: 100%;
@@ -108,14 +107,10 @@
   
   @media screen and (max-width: 376px) {
     .navbar {
-      width: 120% !important;
-   
-      margin-left: 10px;
-    
    
   
       .logo {
-        width: 170px;
+        width: 120px;
         margin-left: 25px;
   
         img {
@@ -125,7 +120,7 @@
       }
   
       .links {
-        margin-right: 15px;
+  
   
         a {
           margin-left: 1rem;

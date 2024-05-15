@@ -38,23 +38,23 @@
 
 @media screen and (max-width: 420px) {
   .header {
-    margin: auto 35px;
+
     height: 120px;
-    width: 100%;
-    margin: auto 5px;
+    width: 90%;
+
     h1 {
       font-size: 24px;
-      color:red;
+     
     }
   }
 }
 
 @media screen and (max-width: 376px) {
   .header {
-    margin: auto 30px;
+
     height: 120px;
-    width: 100%;
-    margin: auto 35px;
+    width: 90%;
+
     h1 {
       font-size: 24px;
     }
@@ -63,13 +63,15 @@
 
 @media screen and (max-width: 320px) {
   .header {
-    margin: auto 35px;
+
     height: 120px;
-    width: 120%;
-    margin: auto 15px;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+
     h1 {
-      font-size: 24px;
-      color:red;
+      font-size: 18px;
+    
     }
   }
 }

@@ -31,21 +31,20 @@ const About = () => {
       <div className="dropdown-container">
         <Dropdown
           title="Fiabilité"
-          isOpen={isFiablite}
-          toggle={toggleFiablite}
+         
         >
           <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             vitae felis nec dui condimentum elementum.
           </span>
         </Dropdown>
-        <Dropdown title="Respect" isOpen={isRespect} toggle={toggleRespect}>
+        <Dropdown title="Respect">
           <span>
             Pellentesque habitant morbi tristique senectus et netus et malesuada
             fames ac turpis egestas.
           </span>
         </Dropdown>
-        <Dropdown title="Service" isOpen={isService} toggle={toggleService}>
+        <Dropdown title="Service">
           <span>
             Duis ac aliquam dui. Fusce nec lorem at risus mattis vehicula nec
             sit amet odio.
@@ -53,8 +52,7 @@ const About = () => {
         </Dropdown>
         <Dropdown
           title="Sécurité"
-          isOpen={isSecurite}
-          toggle={toggleSecurite}
+        
         >
           <span>
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices

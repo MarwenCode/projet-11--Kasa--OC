@@ -14,8 +14,6 @@ const AppartDetails = () => {
   const { id } = useParams();
   const announcement = data.find((item) => item.id === id);
 
-
-
   const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
   const [isEquipmentOpen, setIsEquipmentOpen] = useState(false);
 
@@ -57,20 +55,28 @@ const AppartDetails = () => {
                 alt={announcement.title}
               />
 
-              <div className="btn"> 
+              <div className="btn">
                 <GrPrevious className="prev-btn" onClick={prevSlide} />
                 <GrNext className="next-btn" onClick={nextSlide} />
               </div>
             </div>
 
             <div className="content">
-              <div className="top">
+              <div className="text">
                 <div className="info">
                   <h2>{announcement.title}</h2>
                   <p>{announcement.location}</p>
                 </div>
 
-                <div className="profile">
+                <div className="tags">
+                  {announcement.tags.map((tag, index) => (
+                    <span key={index}>{tag}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="profile">
+                <div className="user">
                   <div className="top">
                     <span>{announcement.host.name}</span>
                     <img src={announcement.host.picture} />
@@ -83,32 +89,32 @@ const AppartDetails = () => {
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div className="tags">
-                {announcement.tags.map((tag, index) => (
-                  <span key={index}>{tag}</span>
-                ))}
+            <div className="down">
+              <div className="description">
+
+              <Dropdown title="Description">
+                <span>{announcement.description}</span>
+              </Dropdown>
+
+
               </div>
 
-              <div className="down">
-                <Dropdown
-                  title="Description"
-                  isOpen={isDescriptionOpen}
-                  toggle={toggleDescription}>
-                  <span>{announcement.description}</span>
-                </Dropdown>
+              <div className="equipement">
 
-                <Dropdown
-                  title="Equipement"
-                  isOpen={isEquipmentOpen}
-                  toggle={toggleEquipment}>
-                  <ul>
-                    {announcement?.equipments.map((equipment, index) => (
-                      <li key={index}>{equipment}</li>
-                    ))}
-                  </ul>
-                </Dropdown>
+              <Dropdown title="Equipement">
+                <ul>
+                  {announcement?.equipments.map((equipment, index) => (
+                    <li key={index}>{equipment}</li>
+                  ))}
+                </ul>
+              </Dropdown>
+
               </div>
+        
+
+            
             </div>
           </div>
         </>

@@ -2,10 +2,20 @@ import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import "./dropdown.scss";
 
-const Dropdown = ({ title, isOpen, toggle, children }) => {
+const Dropdown = ({ title, children }) => {
+
+  const [isOpen , setIsOpen] = useState(false)
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+
+  }
+
+
+
   return (
     <div className="dropdown">
-      <div className="title" onClick={toggle}>
+      <div className="title"  onClick={toggle}>
         <p>{title}</p>
         <span>
           {isOpen ? (
