@@ -17,7 +17,7 @@ const Dropdown = ({ title, children }) => {
     <div className="dropdown">
       <div className="title"  onClick={toggle}>
         <p>{title}</p>
-        <span>
+        <span className={`dropdown-icon ${isOpen ? 'rotate-up' : 'rotate-down'}`}>
           {isOpen ? (
             <FaChevronUp className="dropdown-icon" />
           ) : (

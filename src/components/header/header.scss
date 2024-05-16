@@ -9,6 +9,7 @@
   // width: 100%;
   max-width: 1350px; 
   margin: 30px auto; 
+  width: 90%;
 
 
   h1 {
@@ -33,6 +34,17 @@
   }
 }
 
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 85%;
+    height: 180px;
+    h1 {
+      font-size: 26px;
+    }
+  }
+}
 
 
 
