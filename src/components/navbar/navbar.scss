@@ -4,10 +4,24 @@
   align-items: center;
   padding: 1rem;
 
+
+  .logo {
+    width: 170px;
+   
+
+    img {
+      width: 100%;
+      max-width: 170px;
+
+    }
+
+
+  }
+
   .links {
     display: flex;
     align-items: center;
-    margin-right: 80px;
+    // margin-right: 80px;
 
     a {
       margin-left: 0.5rem;
@@ -49,6 +63,7 @@
     .links {
       margin-right: 30px;
       text-transform: uppercase;
+      font-size:  12px;
 
 
 
@@ -79,6 +94,8 @@
       margin-right: 30px;
       text-transform: uppercase;
 
+      font-size:  12px;
+
 
 
       a {
@@ -95,7 +112,7 @@
 
 
     .logo {
-      width: 120px;
+      width: 90px;
       margin-left: 25px;
 
       img {
@@ -106,6 +123,8 @@
 
     .links {
       text-transform: uppercase;
+
+      font-size:  12px;
       
 
 
@@ -144,7 +163,7 @@
     .links {
       margin-right: 15px;
       text-transform: uppercase;
-      font-size: 10px;
+      font-size: 8px;
 
 
       a {

@@ -55,10 +55,10 @@ const AppartDetails = () => {
                 alt={announcement.title}
               />
 
-              <div className="btn">
+              {/* <div className="btn"> */}
                 <GrPrevious className="prev-btn" onClick={prevSlide} />
                 <GrNext className="next-btn" onClick={nextSlide} />
-              </div>
+              {/* </div> */}
             </div>
 
             <div className="content">
