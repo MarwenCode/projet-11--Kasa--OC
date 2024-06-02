@@ -25,7 +25,9 @@ const Dropdown = ({ title, children }) => {
           )}
         </span>
       </div>
-      {isOpen && <div className="content">{children}</div>}
+      <div className={`content ${isOpen ? 'open' : 'closed'}`}>
+        {children}
+      </div>
     </div>
   );
 };
