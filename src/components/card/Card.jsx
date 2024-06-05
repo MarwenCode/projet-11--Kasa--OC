@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import "./card.scss";
 
 export const Card = ({ data }) => {
+
+  console.log(data);
+
+
   return (
     <div className="announcements">
       {data.map((announcement, index) => (

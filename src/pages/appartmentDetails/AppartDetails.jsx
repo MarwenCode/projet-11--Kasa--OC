@@ -12,21 +12,13 @@ import Erreur from "../../components/erreur/Erreur";
 
 const AppartDetails = () => {
   const { id } = useParams();
+  console.log(data);
   const announcement = data.find((item) => item.id === id);
-
-  const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
-  const [isEquipmentOpen, setIsEquipmentOpen] = useState(false);
-
-  const toggleDescription = () => {
-    setIsDescriptionOpen(!isDescriptionOpen);
-  };
-
-  const toggleEquipment = () => {
-    setIsEquipmentOpen(!isEquipmentOpen);
-  };
 
   //count slider picture
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  console.log(announcement.pictures);
 
   const nextSlide = () => {
     setCurrentSlide(
@@ -55,10 +47,15 @@ const AppartDetails = () => {
                 alt={announcement.title}
               />
 
-              {/* <div className="btn"> */}
-                <GrPrevious className="prev-btn" onClick={prevSlide} />
-                <GrNext className="next-btn" onClick={nextSlide} />
-              {/* </div> */}
+              {announcement.pictures.length > 1 && (
+                <>
+                  <GrPrevious className="prev-btn" onClick={prevSlide} />
+                  <GrNext className="next-btn" onClick={nextSlide} />
+                  <div className="image-counter">
+                    {currentSlide + 1}/{announcement.pictures.length}
+                  </div>
+                </>
+              )}
             </div>
 
             <div className="content">
@@ -93,28 +90,20 @@ const AppartDetails = () => {
 
             <div className="down">
               <div className="description">
-
-              <Dropdown title="Description">
-                <span>{announcement.description}</span>
-              </Dropdown>
-
-
+                <Dropdown title="Description">
+                  <span>{announcement.description}</span>
+                </Dropdown>
               </div>
 
               <div className="equipement">
-
-              <Dropdown title="Equipement">
-                <ul>
-                  {announcement?.equipments.map((equipment, index) => (
-                    <li key={index}>{equipment}</li>
-                  ))}
-                </ul>
-              </Dropdown>
-
+                <Dropdown title="Equipement">
+                  <ul>
+                    {announcement?.equipments.map((equipment, index) => (
+                      <li key={index}>{equipment}</li>
+                    ))}
+                  </ul>
+                </Dropdown>
               </div>
-        
-
-            
             </div>
           </div>
         </>

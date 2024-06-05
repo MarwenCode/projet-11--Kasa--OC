@@ -1,16 +1,13 @@
-import React, { useState } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import Header from "../../components/header/Header";
 import Dropdown from "../appartmentDetails/Dropdown";
 import "./about.scss";
 
 const About = () => {
- 
-
   return (
     <div className="about">
       <Navbar />
-      <Header />
+      <Header imageUrl="/assets/nature.png"  showText={false} />
       <div className="dropdown-container">
         <Dropdown title="Fiabilité">
           <span>
